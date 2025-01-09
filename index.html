@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Robot Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="robot" id="robot"></div>
+        <div class="controls">
+            <button class="btn expression-btn" data-expression="快乐">快乐</button>
+            <button class="btn expression-btn" data-expression="眨眼">眨眼</button>
+            <button class="btn expression-btn" data-expression="睡觉">睡觉</button>
+            <button class="btn voice-btn" id="voiceBtn">语音控制</button>
+            <p id="output"></p>
+            <q id="put"></q>
+        </div>
+        <div class="music-slider">
+            <input type="range" min="0" max="100" value="50" class="slider" id="musicSlider">
+        </div>
+    </div>
+    <audio id="music" src="music1.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
