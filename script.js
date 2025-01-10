@@ -108,24 +108,24 @@ document.addEventListener('DOMContentLoaded', () => {
         put.textContent = '语音识别内容: ' + text;
  
          switch (text) {
-             case '开始播放歌曲。':
+             case '开始播放歌曲。'||'开始播放歌曲':
                 playMusic(currentSongIndex);
                 break;
-             case '播放下一首。':
+             case '播放下一首。'||'播放下一首':
                  currentSongIndex++;
                  playMusic(currentSongIndex);
                  break;
-             case '播放上一首。':
+             case '播放上一首。'||'播放上一首':
                  currentSongIndex--;
                  playMusic(currentSongIndex);
                  break;
-             case '暂停播放。':
+             case '暂停播放。'||'暂停播放':
                  music.pause();
                  break;
-             case '继续播放。':
+             case '继续播放。'||'继续播放':
                  music.play();
                  break;
-              case '音量增大。':
+              case '音量增大。'||'音量增大':
                 if (music.volume <= 1) {
                 music.volume += 0.25;
                  }
